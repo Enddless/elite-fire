@@ -1,0 +1,15 @@
+.label {
+  display: block;
+  width: 100%;
+  margin-bottom: 32px;
+
+  &__text {
+    @include fluid-text(18, 16);
+
+    line-height: 24px;
+    letter-spacing: 2.8px;
+    font-weight: 300;
+    display: block;
+    margin-bottom: 7px;
+  }
+}

@@ -1,0 +1,50 @@
+.catalog {
+  overflow: hidden;
+  & .container {
+    position: relative;
+  }
+
+  &__image {
+    position: absolute;
+    left: -260px;
+    top: 59px;
+    z-index: -1;
+  }
+  &__title {
+    line-height: 50px;
+    text-align: left;
+
+    @include tablet {
+      text-align: center;
+    }
+  }
+  &__form {
+    max-width: 490px;
+    margin-top: 40px;
+
+    @include tablet {
+      max-width: 100%;
+    }
+  }
+  &__button {
+    margin-top: 25px;
+
+    @include tablet {
+      margin: 0 auto;
+      display: block;
+    }
+  }
+  &__background {
+    position: absolute;
+    right: -733px;
+    top: -69px;
+
+    @include tablet {
+      position: relative;
+      right: -15px;
+      top: 0;
+      margin-top: -50px;
+      width: 120%;
+    }
+  }
+}

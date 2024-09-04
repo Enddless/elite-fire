@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!--Plugin CSS file with desired skin-->
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
+
+	<!--jQuery-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<!--Plugin JavaScript file-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+	<link rel="stylesheet" href="./styles/styles.css">
+	<script src="/scrits/scroll-header.js" defer></script>
+	<script src="/scrits/ion-range-slider.js" defer></script>
+	<title>Elite Fire</title>
+</head>
+
+<body>
+	<header class="header _active">
+		<div class="header__wrapper">
+			<div class="header__inner container">
+				<a href="" class="header__logo logo">
+					<img src="./images/logo.svg" alt="Elite Fire" class="logo__image" width="139" height="70" loading="lazy" />
+				</a>
+				<nav class="header__menu hidden-mobile">
+					<ul class="header__menu-list">
+						<li class="header__menu-item">
+							<a href="/" class="header__menu-link">Продукция</a>
+						</li>
+						<li class="header__menu-item">
+							<a href="/" class="header__menu-link">Конструктор</a>
+						</li>
+						<li class="header__menu-item">
+							<a href="/" class="header__menu-link">Опыт</a>
+						</li>
+						<li class="header__menu-item">
+							<a href="/" class="header__menu-link">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<button class="header__button button button--accent " type="button">
+					<a href="tel:88002017578" class="header__phone">
+						<img src="./images/icons/phone.svg" alt="" width="18" height="18" loading="lazy" />
+					</a>
+
+
+				</button>
+				<button class="button__burger-menu burger-button visible-mobile" type="button"
+					onclick="mobileOverlay.showModal()">
+					<span class="visually-hidden">Open navigation menu</span>
+				</button>
+			</div>
+		</div>
+	</header>
+
+	<dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+		<form class="mobile-overlay__close-button-wrapper" method="dialog">
+			<button class="mobile-overlay__close-button cross-button" type="submit">
+				<span class="visually-hidden">Close navigation menu</span>
+			</button>
+		</form>
+		<div class="mobile-overlay__body">
+			<ul class="mobile-overlay__list">
+				<li class="mobile-overlay__item">
+					<a href="/" class="mobile-overlay__link">Продукция</a>
+				</li>
+				<li class="mobile-overlay__item">
+					<a href="/" class="mobile-overlay__link">Конструктор</a>
+				</li>
+				<li class="mobile-overlay__item">
+					<a href="/" class="mobile-overlay__link">Опыт</a>
+				</li>
+				<li class="mobile-overlay__item">
+					<a href="/" class="mobile-overlay__link">Контакты</a>
+				</li>
+			</ul>
+			<button class="header__button button button--accent " type="button">
+				<img src="./images/icons/phone.svg" alt="" width="18" height="18" loading="lazy" />
+			</button>
+		</div>
+	</dialog>
+
+	<main class="main-content">
+		<section class="section section-hero container">
+			<div class="section__body">
+				<div class="hero">
+					<div class="hero__main">
+						<div class="hero__body">
+							<h1 class="hero__title title">Автоматические биокамины</h1>
+							<div class="hero__description">
+								<p>от <span>99 000 ₽</span> </p>
+							</div>
+							<ul class="hero__features">
+								<li class="hero__features-item">
+									<img src="./images/icons/gear.svg" alt="" width="30" height="30" loading="lazy" class="">
+									<p>Свое производство</p>
+								</li>
+								<li class="hero__features-item">
+									<img src="./images/icons/plane.svg" alt="" width="30" height="30" loading="lazy" class="">
+									<p>Доставка в любую точку мира</p>
+								</li>
+							</ul>
+
+						</div>
+						<img class="hero__image" src="./images/hero-bg.svg" width="700" height="429" alt="" loading="lazy">
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-features container">
+			<header class="section__header">
+				<h2 class="section__title title">
+					Настоящий высокий огонь у вас дома
+				</h2>
+				<div class="section__description">
+					<p>Благодаря специальной технологии горения биоэтанола мы добились горения потрясающей красоты</p>
+				</div>
+			</header>
+			<div class="section__body">
+
+				<div class="features">
+					<img src="./images/features/fireplace.svg" alt="" width="1289" height="495" loading="lazy"
+						class="features__image">
+					<ul class="features__list grid grid--3">
+						<li class="features__item">
+							<div class="features-card">
+								<img src="./images/icons/fire.svg" width="40" height="40" alt="" class="features-card__icon"
+									loading="lazy">
+								<h3 class="features-card__title">
+									Пламя яркое, высотой до 20 сантиметров
+								</h3>
+							</div>
+						</li>
+						<li class="features__item">
+							<div class="features-card">
+								<img src="./images/icons/water.svg" width="40" height="40" alt="" class="features-card__icon"
+									loading="lazy">
+								<h3 class="features-card__title">
+									Работает такой камин на биотопливе
+								</h3>
+							</div>
+						</li>
+						<li class="features__item">
+							<div class="features-card">
+								<img src="./images/icons/close.svg" width="40" height="40" alt="" class="features-card__icon"
+									loading="lazy">
+								<h3 class="features-card__title">
+									Он не дымит и не пахнет
+								</h3>
+							</div>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-catalog">
+			<div class="section__body">
+				<div class="catalog">
+					<div class="container">
+						<img src="images/catalog/bg.png" width="1224" height="261" alt="bg" class="catalog__image">
+						<h2 class="catalog__title title">
+							Получите каталог биокаминов<br>прямо сейчас!<br>В подарок дизайн проект
+						</h2>
+						<form class="catalog__form form">
+							<label class="catalog__label label">
+								<span class="label__text">Имя</span>
+								<input type="text" name="name" placeholder="Введите ваше имя" class="input">
+							</label>
+							<label class="catalog__label label">
+								<span class="label__text">Почта</span>
+								<input type="email" name="email" placeholder="Введите ваш E-mail" class="input" required="">
+							</label>
+							<label class="catalog__label label">
+								<span class="label__text">Телефон</span>
+								<input type="tel" name="phone" placeholder="Введите ваш телефон" class="input" required="">
+							</label>
+
+							<button class="catalog__button button button--bordered">Получить</button>
+						</form>
+						<img src="images/catalog/catalog.png" alt="catalog" class="catalog__background">
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="section section-refueling container">
+			<div class="section__body">
+				<div class="refueling">
+					<div class="refueling__body">
+						<h2 class="refueling__title title"> заправка
+						</h2>
+						<p class="refueling__text"> Внутри бака не просто труба. Спроектированный нами бак, самого большого объема
+							<span class="refueling__paragraph"> В наши топливные блоки встроен мощный насос. </span>
+						</p>
+
+					</div>
+					<div class="refueling__images-wrapper">
+						<div class="refueling__icons-wrapper">
+							<div class="refueling__icons-container">
+								<img src="images/icons/hose.svg" alt="" width="20" height="20" loading="lazy" class="">
+								<span class="refueling__line"> — </span>
+								<img src="images/icons/power-button.svg" alt="" width="20" height="20" loading="lazy" class="">
+							</div>
+							<p class="refueling__icons-text">
+								Достаточно вставить шланг Нажать кнопку
+							</p>
+						</div>
+						<div class="refueling__time-wrapper   _active">
+							<span class="refueling__time">
+								<span class="refueling__number"> 3,5 </span>
+								<span class="refueling__time-text"> минуты </span>
+							</span>
+							<span class="refueling__time-description"> и бак наполнен на 100% </span>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-smart">
+			<div class="container">
+				<header class="section__header">
+					<h2 class="section__title title">
+						Умный камин - очень умный
+					</h2>
+					<div class="section__description">
+						<p>
+							Даже если у Вас нет своего решения по умному дому.
+							Мы отлично ладим с Яндекс.Алиса и Mi Home.
+							Или&nbsp;просто включаемся с пульта.
+						</p>
+					</div>
+				</header>
+				<div class="section__body">
+					<div class="smart">
+						<img src="./images/smart/kamin.png" alt="" width="1306" height="600" loading="lazy" class="smart__image">
+						<div class="smart__form">
+							<h2 class="smart__form-title title">
+								Получите бесплатно разработку биокамина по Вашим размерам прямо сейчас!
+							</h2>
+							<form class="smart__form-container form">
+								<label class="smart__label label">
+									<span class="label__text">Имя</span>
+									<input type="text" name="name" placeholder="Введите ваше имя" class="input">
+								</label>
+								<label class="smart__label label">
+									<span class="label__text">Почта</span>
+									<input type="email" name="email" placeholder="Введите ваш E-mail" class="input" required="">
+								</label>
+								<label class="smart__label label">
+									<span class="label__text">Телефон</span>
+									<input type="tel" name="phone" placeholder="Введите ваш телефон" class="input" required="">
+								</label>
+
+								<button class="smart__catalog-button button button--bordered">Получить</button>
+							</form>
+							<img src="images/smart/smart-form.png" width="1158" height="673" alt="smart" class="smart__form-image">
+
+						</div>
+						<div class="smart__description-wrapper grid grid--2">
+							<div class="smart__block smart__block-one">
+								<div class="smart__block-one-head">
+									<h3 class="smart__block-title block-title"> Топливный блок </h3>
+									<p class="smart__block-description"> Лицевая панель из жаропрочной нержавеющей стали толщиной 5 мм
+									</p>
+								</div>
+								<div class="smart__img-wrapper">
+									<img loading="lazy" class="smart__block-one-img" src="images/smart/block-fireplace.png" width="571"
+										height="170" alt="камин">
+								</div>
+								<div class="smart__finishing smart__finishing-one">
+									<h4 class="smart__finishing-title block-name">
+										Варианты отделки
+									</h4>
+									<ul class="smart__finishing-list">
+										<li class="smart__finishing-item smart__finishing-item_column-one">
+											<span class="smart__finishing-text block-text">
+												черный матовый
+											</span>
+										</li>
+										<li class="smart__finishing-item smart__finishing-item_column-two">
+											<span class="smart__finishing-text block-text">
+												керамика
+											</span>
+										</li>
+										<li class="smart__finishing-item smart__finishing-item_column-one">
+											<span class="smart__finishing-text block-text">
+												шлифованная сталь
+											</span>
+										</li>
+										<li class="smart__finishing-item smart__finishing-item_column-two">
+											<span class="smart__finishing-text block-text">
+												нитрид титана
+											</span>
+										</li>
+									</ul>
+								</div>
+								<div class="smart__finishing">
+									<h4 class="smart__finishing-title smart__finishing-title-two block-name">
+										Стандартная комплектация
+									</h4>
+									<ul class="smart__finishing-list">
+										<li class="smart__finishing-item smart__finishing-item_column-one">
+											<span class="smart__finishing-text block-text">
+												Управление с кнопок
+
+											</span>
+										</li>
+										<li class="smart__finishing-item smart__finishing-item_column-two">
+											<span class="smart__finishing-text block-text">
+												Датчик температуры
+
+											</span>
+										</li>
+										<li class="smart__finishing-item smart__finishing-item_column-one">
+											<span class="smart__finishing-text block-text">
+												С помощью пульта
+
+											</span>
+										</li>
+										<li class="smart__finishing-item smart__finishing-item_column-two">
+											<span class="smart__finishing-text block-text">
+												Датчик наклона
+
+											</span>
+										</li>
+										<li class="smart__finishing-item smart__finishing-item_column-one">
+											<span class="smart__finishing-text block-text">
+												Умный дом
+
+
+											</span>
+										</li>
+										<li class="smart__finishing-item smart__finishing-item_column-two">
+											<span class="smart__finishing-text block-text">
+												Дисплей
+
+
+											</span>
+										</li>
+										<li class="smart__finishing-item smart__finishing-item_column-one">
+											<span class="smart__finishing-text block-text">
+												Поджиг за 40 секунд
+											</span>
+										</li>
+										<li class="smart__finishing-item smart__finishing-item_column-two">
+											<span class="smart__finishing-text block-text">
+												Индикатор уровня топлива
+											</span>
+										</li>
+										<li class="smart__finishing-item smart__finishing-item_column-one">
+											<span class="smart__finishing-text block-text">
+												Автозаправка
+											</span>
+										</li>
+
+										<li class="smart__finishing-item smart__finishing-item_column-two">
+											<span class="smart__finishing-text block-text">
+												Блокировка залива топлива
+											</span>
+										</li>
+										<li class="smart__finishing-item smart__finishing-item_column-one">
+											<span class="smart__finishing-text block-text">
+												Датчик пролива
+											</span>
+										</li>
+										<li class="smart__finishing-item smart__finishing-item_column-two">
+											<span class="smart__finishing-text block-text">
+												Кнопка отключения от сети на лицевой панели
+											</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="smart__block smart__block-two">
+								<h3 class="smart__block-two-title block-title"> Очаги для встраивания в нишу по Вашим размерам </h3>
+								<p class="smart__block-description smart__block-two-description">
+									<span class="smart__paragraph">
+										Короб выполненный из нержавеющей стали 2 мм или холоднокатанной стали 3 мм Окрашен
+										кремнийорганической и акриловой краской
+									</span>
+									<span class="smart__paragraph"> Каждый комплектуется керамическим матом </span>
+									<span class="smart__paragraph"> Лучшая теплоизолированность из доступных </span>
+									<span class="smart__paragraph"> Изготавливается исключительно под Ваши размеры </span>
+									<span class="smart__paragraph"> Наши технологи спроектируют техническое задание для ниши учитывая
+									</span>
+									<span class="smart__paragraph"> особенности Вашего ремонта. </span>
+									<span class="smart__paragraph"> Размер ограничен только Вашей фантазией </span>
+									<span class="smart__paragraph"> Отделка стемалитом и цветными металлами </span>
+
+								</p>
+								<div class="smart__video">
+									<video class="smart__video-block" src="images/smart/video-two.mp4" playsinline muted autoplay loop
+										preload="metadata">
+										Sorry, your browser doesn't support embedded videos.
+									</video>
+								</div>
+							</div>
+							<div class="smart__block smart__block-three ">
+								<h3 class="smart__block-three-title block-title"> Готовые решения </h3>
+								<p class="smart__block-description smart__block-three-description">
+									<span class="smart__paragraph"> Напольные отдельно стоящие камины. </span>
+									<span class="smart__paragraph"> Настенные очаги, которые вешаются как ТВ. Подвесные модели. </span>
+								</p>
+								<div class="smart__picture">
+									<img loading="lazy" class="smart__picture-block" src="images/smart/sol-1.jpg" alt="камин">
+								</div>
+
+							</div>
+							<div class="smart__block smart__block-four ">
+								<h3 class="smart__block-four-title block-title"> Аксессуары </h3>
+								<p class="smart__block-description smart__block-four-description">
+									<span class="smart__paragraph"> Защитные экраны, Дверцы, Стемалит, Дрова, </span>
+									<span class="smart__paragraph"> Камни, Кастомные пульты </span>
+
+								</p>
+								<div class="smart__picture">
+									<img loading="lazy" class="smart__picture-block" src="images/smart/why-three.jpg" width="800"
+										height="800" alt="камин">
+								</div>
+							</div>
+
+
+						</div>
+						<div class="smart__catalog-wrapper ">
+							<h3 class="smart__catalog-title title">
+								Получите каталог с моделями и ценами на всю нашу продукцию
+							</h3>
+							<button class="smart__catalog-button button button--bordered">
+								Получить каталог!
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-solution container ">
+			<div class="section__body">
+				<div class="solution">
+					<h2 class="solution__title title">
+						Почемы мы можем многое? Свой цех. Свои станки. Своя лаборатория
+					</h2>
+					<ul class="solution__list grid grid--3">
+						<li class="solution__item">
+							<img loading="lazy" class="solution__img _anim-items _anim-no-hide _active"
+								src="images/solution/why-one.jpg" width="800" height="800" alt="камин">
+						</li>
+						<li class="solution__item">
+							<img loading="lazy" class="solution__img _anim-items _anim-no-hide _active"
+								src="images/solution/why-two.jpg" width="800" height="800" alt="камин">
+						</li>
+						<li class="solution__item">
+							<img loading="lazy" class="solution__img _anim-items _anim-no-hide _active"
+								src="images/solution/why-three.jpg" width="800" height="800" alt="камин">
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="section section-constructor container ">
+			<header class="section__header">
+				<h2 class="section__title title">
+					Вы автор вашего камина
+				</h2>
+			</header>
+			<div class="section__body">
+				<div class="constructor">
+					<form class="constructor__form form" id="form">
+						<div class="constructor__form-content grid grid--2">
+							<div class="constructor__img-wrapper">
+								<picture class="constructor__picture">
+									<img loading="lazy" class="constructor__img" src="images/constructor/author-fireplace.png" width="533"
+										height="374" alt="камин">
+								</picture>
+							</div>
+							<div class="constructor__group-wrapper">
+								<div class="constructor__size-wrapper">
+									<span class="constructor__group-title"> Выберите длину </span>
+
+									<div class="constructor__range-wrapper">
+										<span class="constructor__size-number"> 0.5&nbsp;м
+										</span>
+
+										<div class="constructor__range">
+											<input id="demo_0" type="text" class="irs-hidden-input" tabindex="-1" readonly="">
+										</div>
+
+
+										<span class="constructor__size-number"> 10&nbsp;м </span>
+									</div>
+								</div>
+
+								<div class="constructor__functions-wrapper">
+									<span class="constructor__group-title"> дополнительные функции </span>
+									<div class="constructor__checkboxes-wrapper">
+										<label class="constructor__label checkbox-js">
+											<span class="constructor__checkbox-text"> Увеличенный бак на 30% </span>
+											<input type="checkbox" id="check1" class="constructor__checkbox">
+											<span class="constructor__custom-checkbox"> </span>
+										</label>
+
+										<label class="constructor__label checkbox-js">
+											<span class="constructor__checkbox-text"> Управление со смартфона (iOS/Android) </span>
+											<input type="checkbox" id="check2" class="constructor__checkbox">
+											<span class="constructor__custom-checkbox"> </span>
+										</label>
+										<label class="constructor__label checkbox-js">
+											<span class="constructor__checkbox-text"> Подключение к Mi.Home </span>
+											<input type="checkbox" id="check3" class="constructor__checkbox">
+											<span class="constructor__custom-checkbox"> </span>
+										</label>
+										<label class="constructor__label checkbox-js">
+											<span class="constructor__checkbox-text"> Динамики (треск дров и озвучка команд) </span>
+											<input type="checkbox" id="check4" class="constructor__checkbox">
+											<span class="constructor__custom-checkbox"> </span>
+										</label>
+										<label class="constructor__label checkbox-js">
+											<span class="constructor__checkbox-text"> Подключение к Я.Алиса </span>
+											<input type="checkbox" id="check5" class="constructor__checkbox">
+											<span class="constructor__custom-checkbox"> </span>
+										</label>
+
+										<label class="constructor__label checkbox-js">
+											<span class="constructor__checkbox-text"> Голосовое управление </span>
+											<input type="checkbox" id="check6" class="constructor__checkbox">
+											<span class="constructor__custom-checkbox"> </span>
+										</label>
+										<label class="constructor__label checkbox-js">
+											<span class="constructor__checkbox-text"> Touch Дисплей </span>
+											<input type="checkbox" id="check7" class="constructor__checkbox">
+											<span class="constructor__custom-checkbox"> </span>
+										</label>
+										<label class="constructor__label checkbox-js">
+											<span class="constructor__checkbox-text"> Включение по паролю или ключом </span>
+											<input type="checkbox" id="check8" class="constructor__checkbox">
+											<span class="constructor__custom-checkbox"> </span>
+										</label>
+
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="constructor__bottom-wrapper">
+							<div class="constructor__length-wrapper">
+								<span class="constructor__group-title"> длина </span>
+								<output for="demo_0" id="length" name="length" class="constructor__output"> </output>
+							</div>
+							<div class="constructor__color-wrapper">
+								<span class="constructor__group-title"> Лицевая панель </span>
+								<span class="constructor__output2"> Чёрный матовый </span>
+
+							</div>
+							<div class="constructor__price-wrapper">
+								<span class="constructor__group-title"> стоимость </span>
+								<span class="constructor__price"> </span>
+							</div>
+							<a href="#" class="constructor__button button button--bordered"> Оставить заявку </a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="footer">
+		<div class="footer__inner  container">
+			<h2 class="footer__title title"> Связаться с нами </h2>
+			<div class="footer__body">
+				<div class="footer__block-wrapper">
+					<div class="footer__contacts-wrapper">
+						<div class="footer__content-wrapper">
+							<span class="footer__block-title"> WhatsApp / Мобильный </span>
+							<a href="#" class="footer__link"> +7 (917) 163-70-22 </a>
+						</div>
+						<div class="footer__content-wrapper">
+							<span class="footer__block-title"> Телеграмм </span>
+							<a href="#" class="footer__link"> @elite_fire </a>
+						</div>
+					</div>
+					<div class="footer__contacts-wrapper">
+						<div class="footer__content-wrapper">
+							<span class="footer__block-title"> Почта </span>
+							<a href="mailto:info@elite-fire.ru" class="footer__link"> info@elite-fire.ru </a>
+						</div>
+						<div class="footer__content-wrapper">
+							<span class="footer__block-title"> Наш адрес </span>
+							<span class="footer__adress"> Россия, г. Самара, Промышленное шоссе 13 </span>
+						</div>
+					</div>
+					<div class="footer__contacts-wrapper">
+						<div class="footer__content-wrapper">
+							<span class="footer__block-title"> Телефон </span>
+							<a href="tel:88002017578" class="footer__phone"> 8 (800) 201-75-78 </a>
+						</div>
+						<a href="#" class="footer__call-link button button--bordered"> Связаться с менеджером </a>
+					</div>
+				</div>
+			</div>
+			<div class="footer__extra">
+				<a href="" class="footer__logo logo">
+					<img src="./images/logo.svg" alt="Positivus" class="logo__image" width="97" height="40" loading="lazy" />
+				</a>
+				<p class="footer__copyright">© <time datetime="2021">2020-2021</time> </p>
+				<a href=/"" class="footer__privacy-policy-link">Пользовательское соглашение</a>
+			</div>
+		</div>
+	</footer>
+
+
+</body>
+
+</html>

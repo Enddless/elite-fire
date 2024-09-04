@@ -1,0 +1,14 @@
+.features-card {
+  display: flex;
+  column-gap: 31px;
+  align-items: center;
+  max-width: 219px;
+
+  &__title {
+    @include fluid-text(16, 14);
+
+    font-weight: 300;
+    line-height: 150%;
+    max-width: 176px;
+  }
+}

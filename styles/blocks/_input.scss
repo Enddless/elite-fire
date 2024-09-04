@@ -1,0 +1,23 @@
+.input {
+  @include fluid-text(18, 16);
+
+  width: 100%;
+  border: 2px solid var(--palette-color3);
+  background: transparent;
+  padding: 14px 38px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 2.8px;
+  color: var(--palette-color6);
+  outline: none;
+
+  &:active,
+  &:focus,
+  &:hover {
+    border-color: var(--palette-color6);
+  }
+
+  &::placeholder {
+    color: var(--palette-color6);
+  }
+}

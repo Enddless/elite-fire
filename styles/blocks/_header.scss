@@ -1,0 +1,88 @@
+.header {
+  position: absolute;
+  width: 100%;
+  min-height: 110px;
+  top: 0;
+  left: 0;
+  min-width: 320px;
+  transition: opacity var(--transition-duration) ease;
+  opacity: 0;
+
+  &._active {
+    opacity: 1;
+  }
+  &__wrapper {
+    padding-top: 35px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    transition: background var(--transition-duration-ease) ease,
+      padding var(--transition-duration) ease;
+    min-height: 49px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 40px;
+
+    @include tablet {
+      column-gap: 30px;
+    }
+  }
+
+  &__logo {
+    @include tablet {
+      max-width: 120px;
+    }
+    @include mobile {
+      max-width: 144px;
+    }
+  }
+  &__menu {
+    @include fluid-text(13, 12);
+    margin-left: auto;
+    color: var(--palette-color4);
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    transition: color var(--transition-duration) ease;
+    &-list {
+      display: flex;
+      align-items: center;
+      column-gap: 40px;
+
+      @include desktop {
+        column-gap: 20px;
+      }
+    }
+
+    &-link {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      height: 48px;
+      text-transform: uppercase;
+
+      @include hover {
+        color: var(--palette-color3);
+      }
+    }
+  }
+
+  &__button {
+    @include square(50px);
+
+    @include hover {
+      opacity: 0.7;
+      background: var(--palette-color3);
+      box-shadow: 0px 0px 50px 0px var(--palette-color3);
+    }
+
+    @include mobile {
+      margin-left: auto;
+    }
+  }
+}

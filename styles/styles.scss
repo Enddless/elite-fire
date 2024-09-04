@@ -1,0 +1,11 @@
+@import 'normalize', 'fonts', 'mixins', 'media', 'variables', 'utils',
+  'globals';
+
+@import 'blocks/irs-slider', 'blocks/grid', 'blocks/label',
+  'blocks/input', 'blocks/scroll-header', 'blocks/button',
+  'blocks/title', 'blocks/burger-button', 'blocks/cross-button',
+  'blocks/header', 'blocks/main-content', 'blocks/features',
+  'blocks/features-card', 'blocks/refueling', 'blocks/smart',
+  'blocks/mobile-overlay', 'blocks/block-title', 'blocks/section',
+  'blocks/hero', 'blocks/solution', 'blocks/catalog',
+  'blocks/constructor', 'blocks/footer';

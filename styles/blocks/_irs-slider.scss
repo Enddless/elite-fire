@@ -1,0 +1,33 @@
+.irs {
+  display: block;
+  width: 100%;
+
+  &--flat {
+    height: 25px;
+    & .irs-line {
+      height: 2px;
+    }
+    & .irs-bar {
+      height: 2px;
+      background: var(--palette-color3);
+    }
+    & .irs-handle {
+      background: var(--palette-color3);
+      border: 1px solid var(--palette-color3);
+      border-radius: var(--border-radius-small);
+      cursor: pointer;
+      top: 11px;
+      width: 30px;
+      height: 30px;
+    }
+    & .irs-handle i,
+    & .irs-handle i:first-child {
+      display: none;
+    }
+  }
+  &-single,
+  &-min,
+  &-max {
+    display: none;
+  }
+}

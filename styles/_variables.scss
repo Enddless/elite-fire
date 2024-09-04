@@ -1,0 +1,35 @@
+:root {
+  --font-family-base: 'Lab', sans-serif;
+
+  --palette-color1: #1d1d1b;
+  --palette-color2: #121212;
+  --palette-color3: #ffcf7a;
+  --palette-color4: #949494;
+  --palette-color5: #ceb787;
+  --palette-color6: #fff;
+  --palette-color7: #232323;
+
+  --border-radius-small: 4px;
+
+  --container-width: 1289px;
+  --container-padding-x: 20px;
+
+  --section-padding-y: 70px;
+
+  --transition-duration-ease: 0.1s;
+  --transition-duration: 0.4s;
+
+  --gradient-text: linear-gradient(
+    90deg,
+    #555555 0%,
+    var(--palette-color6) 40%
+  );
+
+  @include desktop {
+    --section-padding-y: 50px;
+  }
+
+  @include mobile {
+    --section-padding-y: 30px;
+  }
+}
