@@ -13,9 +13,9 @@
 ## Структура проекта
 📁 fonts/  
 📁 images/  
-📁 scripts/ 
-📁 styles/   
-        📁 blocks/
+📁 scripts/  
+📁 styles/     
+        📁 blocks/  
 .prettierrc
 index.html   
 
