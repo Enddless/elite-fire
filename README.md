@@ -15,7 +15,6 @@
 📁 images/  
 📁 scripts/  
 📁 styles/     
-        📁 blocks/  
 .prettierrc
 index.html   
 
