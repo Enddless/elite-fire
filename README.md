@@ -15,7 +15,7 @@
 📁 images/  
 📁 scripts/  
 📁 styles/     
-.prettierrc
+.prettierrc  
 index.html   
 
 ## Используемые технологии
